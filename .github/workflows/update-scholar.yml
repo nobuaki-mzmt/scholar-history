@@ -16,14 +16,22 @@ jobs:
   update:
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    env:
+      SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
           cache: pip
       - run: pip install -r requirements.txt
       - run: python -m unittest discover -s tests
+      - name: Verify SerpApi key
+        run: |
+          if [ -z "$SERPAPI_KEY" ]; then
+            echo "::error::Add SERPAPI_KEY under Settings > Secrets and variables > Actions before running this workflow."
+            exit 1
+          fi
       - run: python src/collect.py
       - run: python src/report.py
       - name: Commit snapshot

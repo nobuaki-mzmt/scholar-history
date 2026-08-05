@@ -4,6 +4,19 @@ This repository records periodic snapshots of [Nobuaki Mizumoto's Google Scholar
 
 Google Scholar shows the current state of its index but does not provide a downloadable history of past totals or per-publication citation counts. This project creates that missing history with a scheduled GitHub Action.
 
+## One-time setup
+
+Google Scholar blocks requests from shared GitHub-hosted runner IP addresses. Scheduled runs therefore use the [SerpApi Google Scholar Author API](https://serpapi.com/google-scholar-author-api). SerpApi currently offers a free plan with 250 searches per month, which is far more than this workflow normally uses.
+
+1. Create a free [SerpApi account](https://serpapi.com/users/sign_up).
+2. Copy the private API key from the SerpApi account page.
+3. In this GitHub repository, open **Settings → Secrets and variables → Actions**.
+4. Select **New repository secret**.
+5. Set the name to `SERPAPI_KEY` and paste the API key as the value.
+6. Open **Actions → Update Google Scholar history → Run workflow**.
+
+The API key is stored as an encrypted GitHub Actions secret and is not written to the repository or logs.
+
 ## Outputs
 
 - [`data/metrics.csv`](data/metrics.csv): total citations, h-index, i10-index, recent-window metrics, and publication count for every successful observation
@@ -21,7 +34,9 @@ Each successful run retrieves all pages of the public profile, extracts profile 
 
 ## Failure safeguards
 
-Google Scholar has no public API and sometimes blocks automated traffic. The collector therefore uses low-frequency requests, retries temporary failures, detects block pages, rejects duplicate identifiers, and refuses a profile that is suspiciously incomplete relative to the preceding snapshot. A failed Action leaves the last valid history unchanged.
+The collector retries temporary failures, rejects duplicate identifiers, and refuses a profile that is suspiciously incomplete relative to the preceding snapshot. A failed Action leaves the last valid history unchanged.
+
+The scheduled workflow uses SerpApi. When run locally without a `SERPAPI_KEY`, the collector attempts a direct request to Google Scholar instead. Direct requests may still be blocked depending on the network.
 
 ## Local use
 
@@ -40,9 +55,16 @@ On Windows PowerShell, activate the environment with:
 .venv\Scripts\Activate.ps1
 ```
 
+To use SerpApi locally, set the environment variable first:
+
+```powershell
+$env:SERPAPI_KEY="your_private_key"
+python src/collect.py
+```
+
 ## Configuration
 
-[`config.json`](config.json) contains the Scholar profile ID, public profile URL, request interval, page size, and incomplete-profile safety threshold.
+[`config.json`](config.json) contains the Scholar profile ID, public profile URL, provider selection, page size, request interval, and incomplete-profile safety threshold.
 
 A negative change means Google Scholar reported a lower count for that publication at the later observation. It may reflect de-duplication, record merging, removal of an indexed document, or a temporary indexing difference.
 

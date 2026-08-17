@@ -1,10 +1,10 @@
 # Latest Google Scholar snapshot
 
-Observed at `2026-08-14T13:44:48Z`.
+Observed at `2026-08-17T13:07:38Z`.
 
 | Metric | All | Recent window |
 |---|---:|---:|
-| Citations | 987 | 837 |
+| Citations | 989 | 839 |
 | h-index | 20 | 17 |
 | i10-index | 28 | 27 |
 | Publications tracked | 73 |  |
@@ -13,7 +13,5 @@ Observed at `2026-08-14T13:44:48Z`.
 
 | Publication | Previous | Current | Change | Type |
 |---|---:|---:|---:|---|
-| Genomic data provide insights into the classification of extant termites | 91 | 92 | +1 | citation_increase |
-| Variation in soldier investment is linked to the evolution of termite soldier defense strategies | 1 | 2 | +1 | citation_increase |
-| The evolution of body size in termites | 25 | 26 | +1 | citation_increase |
-| Termite nest evolution fostered social parasitism by termitophilous rove beetles | 14 | 15 | +1 | citation_increase |
+| A genomic imprinting model of termite caste determination: not genetic but epigenetic inheritance influences offspring caste fate | 68 | 69 | +1 | citation_increase |
+| Independent evolution of a living bridge in the old world army ant lineage | 0 | 1 | +1 | citation_increase |

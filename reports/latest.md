@@ -1,6 +1,6 @@
 # Latest Google Scholar snapshot
 
-Observed at `2026-08-17T13:07:38Z`.
+Observed at `2026-08-19T13:10:08Z`.
 
 | Metric | All | Recent window |
 |---|---:|---:|
@@ -11,7 +11,4 @@ Observed at `2026-08-17T13:07:38Z`.
 
 ## Changes in this observation
 
-| Publication | Previous | Current | Change | Type |
-|---|---:|---:|---:|---|
-| A genomic imprinting model of termite caste determination: not genetic but epigenetic inheritance influences offspring caste fate | 68 | 69 | +1 | citation_increase |
-| Independent evolution of a living bridge in the old world army ant lineage | 0 | 1 | +1 | citation_increase |
+No per-publication changes were detected relative to the preceding observation.

@@ -1,10 +1,10 @@
 # Latest Google Scholar snapshot
 
-Observed at `2026-08-26T13:18:00Z`.
+Observed at `2026-08-28T22:22:18Z`.
 
 | Metric | All | Recent window |
 |---|---:|---:|
-| Citations | 997 | 847 |
+| Citations | 998 | 848 |
 | h-index | 20 | 17 |
 | i10-index | 28 | 27 |
 | Publications tracked | 73 |  |
@@ -13,4 +13,4 @@ Observed at `2026-08-26T13:18:00Z`.
 
 | Publication | Previous | Current | Change | Type |
 |---|---:|---:|---:|---|
-| Genomic data provide insights into the classification of extant termites | 94 | 95 | +1 | citation_increase |
+| Evaluating mate encounter and walking dispersal dynamics of termites using posture tracking and behavioral simulation | 1 | 2 | +1 | citation_increase |

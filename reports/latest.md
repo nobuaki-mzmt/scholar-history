@@ -1,6 +1,6 @@
 # Latest Google Scholar snapshot
 
-Observed at `2026-08-28T22:22:18Z`.
+Observed at `2026-08-31T19:08:41Z`.
 
 | Metric | All | Recent window |
 |---|---:|---:|
@@ -11,6 +11,4 @@ Observed at `2026-08-28T22:22:18Z`.
 
 ## Changes in this observation
 
-| Publication | Previous | Current | Change | Type |
-|---|---:|---:|---:|---|
-| Evaluating mate encounter and walking dispersal dynamics of termites using posture tracking and behavioral simulation | 1 | 2 | +1 | citation_increase |
+No per-publication changes were detected relative to the preceding observation.

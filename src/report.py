@@ -25,6 +25,27 @@ def placeholder(path, title):
     plt.close(figure)
 
 
+def combined_total_history(metrics):
+    frames = []
+    historical = read_csv(DATA / "historical_citations.csv")
+    if not historical.empty:
+        old = historical[["observed_date", "total_citations"]].copy()
+        old["observed_at"] = pd.to_datetime(old["observed_date"], errors="coerce")
+        old["source_priority"] = 0
+        frames.append(old[["observed_at", "total_citations", "source_priority"]])
+    if not metrics.empty:
+        new = metrics[["observed_at_utc", "total_citations"]].copy()
+        new["observed_at"] = pd.to_datetime(new["observed_at_utc"], utc=True, errors="coerce").dt.tz_convert(None)
+        new["source_priority"] = 1
+        frames.append(new[["observed_at", "total_citations", "source_priority"]])
+    if not frames:
+        return pd.DataFrame()
+    frame = pd.concat(frames, ignore_index=True).dropna(subset=["observed_at", "total_citations"])
+    frame["total_citations"] = pd.to_numeric(frame["total_citations"], errors="coerce")
+    frame = frame.dropna(subset=["total_citations"]).sort_values(["observed_at", "source_priority"])
+    return frame.drop_duplicates("observed_at", keep="last").sort_values("observed_at")
+
+
 def main():
     REPORTS.mkdir(parents=True, exist_ok=True)
     metrics = read_csv(DATA / "metrics.csv")
@@ -32,14 +53,12 @@ def main():
     changes = read_csv(DATA / "changes.csv")
 
     citation_path = REPORTS / "citation_history.png"
-    if metrics.empty:
+    history = combined_total_history(metrics)
+    if history.empty:
         placeholder(citation_path, "Google Scholar citation history")
     else:
-        frame = metrics.copy()
-        frame["observed_at_utc"] = pd.to_datetime(frame["observed_at_utc"], utc=True)
-        frame = frame.sort_values("observed_at_utc")
         figure, axis = plt.subplots(figsize=(9, 5))
-        axis.plot(frame["observed_at_utc"], frame["total_citations"], marker="o")
+        axis.plot(history["observed_at"], history["total_citations"], marker="o", markersize=3)
         axis.set_title("Google Scholar citation history")
         axis.set_xlabel("Observation date")
         axis.set_ylabel("Total citations")

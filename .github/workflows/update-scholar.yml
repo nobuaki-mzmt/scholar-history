@@ -37,6 +37,7 @@ jobs:
           fi
       - run: python src/collect.py
       - run: python src/report.py
+      - run: python src/forecast.py
       - name: Commit snapshot
         run: |
           git config user.name "github-actions[bot]"

@@ -1,0 +1,5 @@
+model,training_rmse,backtest_rmse,forecast_2026,forecast_2027,forecast_2028,forecast_2029,forecast_2030
+Linear,135.09,587.63,671.1,749.0,827.0,904.9,982.7
+Quadratic,27.18,274.94,1027.7,1254.5,1503.9,1774.5,2067.1
+Exponential,318.32,2770.82,2557.4,4338.5,7370.7,12504.0,21212.5
+Shifted power law,9.23,12.79,1091.9,1433.4,1854.2,2363.9,2976.6

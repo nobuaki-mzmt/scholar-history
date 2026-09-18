@@ -1,6 +1,6 @@
 # Latest Google Scholar snapshot
 
-Observed at `2026-09-16T16:59:33Z`.
+Observed at `2026-09-18T16:25:49Z`.
 
 | Metric | All | Recent window |
 |---|---:|---:|
@@ -13,4 +13,5 @@ Observed at `2026-09-16T16:59:33Z`.
 
 | Publication | Previous | Current | Change | Type |
 |---|---:|---:|---:|---|
-| Altered colony initiation enabled the evolution of fully asexual lineages in termites | nan | 0 | +0 | new_publication |
+| Anomalous diffusion on the servosphere: A potential tool for detecting inherent organismal movement patterns | 52.0 | 53 | +1 | citation_increase |
+| A genomic imprinting model of termite caste determination: not genetic but epigenetic inheritance influences offspring caste fate | 69.0 | 68 | -1 | citation_decrease |

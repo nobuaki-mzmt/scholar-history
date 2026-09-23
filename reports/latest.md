@@ -1,6 +1,6 @@
 # Latest Google Scholar snapshot
 
-Observed at `2026-09-21T18:13:10Z`.
+Observed at `2026-09-23T17:02:58Z`.
 
 | Metric | All | Recent window |
 |---|---:|---:|
@@ -11,7 +11,4 @@ Observed at `2026-09-21T18:13:10Z`.
 
 ## Changes in this observation
 
-| Publication | Previous | Current | Change | Type |
-|---|---:|---:|---:|---|
-| Genomic data provide insights into the classification of extant termites | 97.0 | 98 | +1 | citation_increase |
-| A genomic imprinting model of termite caste determination: not genetic but epigenetic inheritance influences offspring caste fate | 68.0 | 69 | +1 | citation_increase |
+No per-publication changes were detected relative to the preceding observation.

@@ -1,10 +1,10 @@
 # Latest Google Scholar snapshot
 
-Observed at `2026-09-28T19:41:26Z`.
+Observed at `2026-09-30T18:00:17Z`.
 
 | Metric | All | Recent window |
 |---|---:|---:|
-| Citations | 1016 | 865 |
+| Citations | 1017 | 866 |
 | h-index | 20 | 17 |
 | i10-index | 28 | 27 |
 | Publications tracked | 74 |  |
@@ -13,6 +13,4 @@ Observed at `2026-09-28T19:41:26Z`.
 
 | Publication | Previous | Current | Change | Type |
 |---|---:|---:|---:|---|
-| Ancestral sex-role plasticity facilitates the evolution of same-sex sexual behavior | 32.0 | 33 | +1 | citation_increase |
-| Adaptive switch to sexually dimorphic movements by partner-seeking termites | 45.0 | 46 | +1 | citation_increase |
-| Revealing the structure of information flows discriminates similar animal social behaviors | 32.0 | 33 | +1 | citation_increase |
+| Genomic data provide insights into the classification of extant termites | 98.0 | 99 | +1 | citation_increase |

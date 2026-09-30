@@ -1,19 +1,19 @@
 # Citation forecast
 
-Latest observation: **1,016 citations** on 2026-09-28.
+Latest observation: **1,017 citations** on 2026-09-30.
 
 ## Model comparison
 
 | Model | Training RMSE | Backtest RMSE | 2026 | 2027 | 2028 | 2029 | 2030 |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Linear | 135.7 | 590.9 | 673 | 751 | 829 | 907 | 985 |
+| Linear | 135.7 | 591.1 | 673 | 751 | 829 | 907 | 986 |
 | Quadratic | 27.3 | 276.9 | 1029 | 1256 | 1506 | 1777 | 2070 |
-| Exponential | 320.9 | 2804.8 | 2551 | 4326 | 7347 | 12458 | 21127 |
+| Exponential | 321.1 | 2808.7 | 2550 | 4324 | 7344 | 12453 | 21116 |
 | Shifted power law | 9.2 | 12.8 | 1092 | 1433 | 1854 | 2364 | 2976 |
 
 **Recommended simple extrapolation: Shifted power law.** It had the lowest RMSE when models were fit only through 2023-01-01 and then asked to predict the later 2026 observations.
 
-As a short-term sanity check, a straight line fitted only to observations from April 2026 onward gives year-end forecasts of **2026: 1106**, **2027: 1428**, **2028: 1752**, **2029: 2075**, **2030: 2398**.
+As a short-term sanity check, a straight line fitted only to observations from April 2026 onward gives year-end forecasts of **2026: 1105**, **2027: 1426**, **2028: 1749**, **2029: 2070**, **2030: 2392**.
 
 ## Milestones under the recommended model
 

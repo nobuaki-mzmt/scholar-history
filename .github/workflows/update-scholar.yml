@@ -10,6 +10,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: scholar-history
@@ -38,6 +39,15 @@ jobs:
       - run: python src/collect.py
       - run: python src/report.py
       - run: python src/forecast.py
+      - name: Check notification threshold
+        id: citation_change
+        run: python src/notify.py
+      - name: Create citation-change issue
+        if: steps.citation_change.outputs.notify == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_TITLE: ${{ steps.citation_change.outputs.title }}
+        run: gh issue create --title "$ISSUE_TITLE" --body-file /tmp/citation-notification.md
       - name: Commit snapshot
         run: |
           git config user.name "github-actions[bot]"

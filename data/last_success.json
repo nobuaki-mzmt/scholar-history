@@ -1,14 +1,14 @@
 {
-  "observed_at_utc": "2026-10-14T17:12:52Z",
+  "observed_at_utc": "2026-10-16T16:41:24Z",
   "profile_name": "Nobuaki Mizumoto",
   "profile_url": "https://scholar.google.co.jp/citations?user=bALkDW4AAAAJ&hl=en",
   "data_source": "serpapi",
   "publication_count": 74,
-  "total_citations": 1031,
-  "recent_citations": 880,
+  "total_citations": 1036,
+  "recent_citations": 885,
   "h_index": 20,
   "recent_h_index": 17,
-  "i10_index": 28,
-  "recent_i10_index": 27,
+  "i10_index": 29,
+  "recent_i10_index": 28,
   "recent_since_year": "2021"
 }

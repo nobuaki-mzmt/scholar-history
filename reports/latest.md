@@ -1,23 +1,22 @@
 # Latest Google Scholar snapshot
 
-Observed at `2026-10-23T17:10:14Z`.
+Observed at `2026-10-26T18:41:35Z`.
 
 | Metric | All | Recent window |
 |---|---:|---:|
-| Citations | 1044 | 893 |
+| Citations | 1054 | 903 |
 | h-index | 20 | 17 |
-| i10-index | 30 | 29 |
+| i10-index | 31 | 30 |
 | Publications tracked | 74 |  |
 
 ## Changes in this observation
 
 | Publication | Previous | Current | Change | Type |
 |---|---:|---:|---:|---|
-| Maintaining tandem movement cohesion through antennal movements in termites | 6.0 | 7 | +1 | citation_increase |
-| A genomic imprinting model of termite caste determination: not genetic but epigenetic inheritance influences offspring caste fate | 70.0 | 71 | +1 | citation_increase |
-| Revealing the structure of information flows discriminates similar animal social behaviors | 33.0 | 34 | +1 | citation_increase |
-| Coordination of movement via complementary interactions of leaders and followers in termite mating pairs | 37.0 | 38 | +1 | citation_increase |
-| Subterranean termites (Coptotermes formosanus [Blattodea: Rhinotermitidae]) colonies can readily intercept commercial inground bait stations placed at label … | 7.0 | 8 | +1 | citation_increase |
-| Diversification of pre-mating behaviours through temporal reordering of components | 0.0 | 1 | +1 | citation_increase |
-| Ant and termite collective behavior: group‐level similarity arising from individual‐level diversity | 10.0 | 11 | +1 | citation_increase |
-| Molecular phylogeny reveals the past transoceanic voyages of drywood termites (Isoptera, Kalotermitidae) | 44.0 | 45 | +1 | citation_increase |
+| Genomic data provide insights into the classification of extant termites | 102.0 | 105 | +3 | citation_increase |
+| Subterranean termites (Coptotermes formosanus [Blattodea: Rhinotermitidae]) colonies can readily intercept commercial inground bait stations placed at label … | 8.0 | 10 | +2 | citation_increase |
+| Chemical identification of an aggregation pheromone in the termite Reticulitermes speratus | 53.0 | 54 | +1 | citation_increase |
+| The evolution of body size in termites | 26.0 | 27 | +1 | citation_increase |
+| Modern termites inherited the potential of collective construction from their common ancestor | 40.0 | 41 | +1 | citation_increase |
+| Colony-specific architecture of shelter tubes by termites | 30.0 | 31 | +1 | citation_increase |
+| Molecular phylogeny reveals the past transoceanic voyages of drywood termites (Isoptera, Kalotermitidae) | 45.0 | 46 | +1 | citation_increase |

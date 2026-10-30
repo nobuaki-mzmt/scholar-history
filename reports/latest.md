@@ -1,10 +1,10 @@
 # Latest Google Scholar snapshot
 
-Observed at `2026-10-28T18:21:39Z`.
+Observed at `2026-10-30T18:01:39Z`.
 
 | Metric | All | Recent window |
 |---|---:|---:|
-| Citations | 1055 | 904 |
+| Citations | 1056 | 905 |
 | h-index | 20 | 17 |
 | i10-index | 31 | 30 |
 | Publications tracked | 74 |  |
@@ -13,4 +13,4 @@ Observed at `2026-10-28T18:21:39Z`.
 
 | Publication | Previous | Current | Change | Type |
 |---|---:|---:|---:|---|
-| Subterranean termites (Coptotermes formosanus [Blattodea: Rhinotermitidae]) colonies can readily intercept commercial inground bait stations placed at label … | 10.0 | 11 | +1 | citation_increase |
+| Molecular phylogeny reveals the past transoceanic voyages of drywood termites (Isoptera, Kalotermitidae) | 46.0 | 47 | +1 | citation_increase |

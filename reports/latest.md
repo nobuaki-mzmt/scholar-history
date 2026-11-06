@@ -1,6 +1,6 @@
 # Latest Google Scholar snapshot
 
-Observed at `2026-11-04T19:47:08Z`.
+Observed at `2026-11-06T19:26:02Z`.
 
 | Metric | All | Recent window |
 |---|---:|---:|

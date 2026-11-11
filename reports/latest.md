@@ -1,6 +1,6 @@
 # Latest Google Scholar snapshot
 
-Observed at `2026-11-09T22:24:14Z`.
+Observed at `2026-11-11T19:37:50Z`.
 
 | Metric | All | Recent window |
 |---|---:|---:|
@@ -11,8 +11,4 @@ Observed at `2026-11-09T22:24:14Z`.
 
 ## Changes in this observation
 
-| Publication | Previous | Current | Change | Type |
-|---|---:|---:|---:|---|
-| Genomic data provide insights into the classification of extant termites | 106.0 | 107 | +1 | citation_increase |
-| Age-based spatial distribution of workers is resilient to worker loss in a subterranean termite | 27.0 | 28 | +1 | citation_increase |
-| The evolution of body size in termites | 27.0 | 28 | +1 | citation_increase |
+No per-publication changes were detected relative to the preceding observation.

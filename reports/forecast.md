@@ -1,19 +1,19 @@
 # Citation forecast
 
-Latest observation: **1,072 citations** on 2026-11-20.
+Latest observation: **1,075 citations** on 2026-11-23.
 
 ## Model comparison
 
 | Model | Training RMSE | Backtest RMSE | 2026 | 2027 | 2028 | 2029 | 2030 |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Linear | 152.5 | 623.7 | 755 | 845 | 936 | 1026 | 1116 |
-| Quadratic | 28.9 | 299.0 | 1053 | 1287 | 1544 | 1824 | 2127 |
-| Exponential | 304.0 | 3045.7 | 2165 | 3584 | 5942 | 9837 | 16286 |
-| Shifted power law | 9.4 | 13.1 | 1094 | 1436 | 1858 | 2369 | 2983 |
+| Linear | 152.6 | 624.2 | 755 | 846 | 936 | 1026 | 1117 |
+| Quadratic | 28.9 | 299.4 | 1053 | 1287 | 1545 | 1825 | 2127 |
+| Exponential | 304.2 | 3049.7 | 2165 | 3583 | 5940 | 9834 | 16280 |
+| Shifted power law | 9.4 | 13.2 | 1094 | 1436 | 1858 | 2369 | 2983 |
 
 **Recommended simple extrapolation: Shifted power law.** It had the lowest RMSE when models were fit only through 2023-01-01 and then asked to predict the later 2026 observations.
 
-As a short-term sanity check, a straight line fitted only to observations from April 2026 onward gives year-end forecasts of **2026: 1109**, **2027: 1437**, **2028: 1766**, **2029: 2094**, **2030: 2423**.
+As a short-term sanity check, a straight line fitted only to observations from April 2026 onward gives year-end forecasts of **2026: 1109**, **2027: 1437**, **2028: 1767**, **2029: 2095**, **2030: 2424**.
 
 ## Milestones under the recommended model
 

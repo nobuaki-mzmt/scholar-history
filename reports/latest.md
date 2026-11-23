@@ -1,10 +1,10 @@
 # Latest Google Scholar snapshot
 
-Observed at `2026-11-20T20:23:49Z`.
+Observed at `2026-11-23T23:55:23Z`.
 
 | Metric | All | Recent window |
 |---|---:|---:|
-| Citations | 1072 | 921 |
+| Citations | 1075 | 924 |
 | h-index | 20 | 17 |
 | i10-index | 31 | 30 |
 | Publications tracked | 77 |  |
@@ -13,6 +13,6 @@ Observed at `2026-11-20T20:23:49Z`.
 
 | Publication | Previous | Current | Change | Type |
 |---|---:|---:|---:|---|
-| Age-based spatial distribution of workers is resilient to worker loss in a subterranean termite | 28.0 | 29 | +1 | citation_increase |
-| Data and source code used for: Diversification of pre-mating behaviors through temporal reordering of components | nan | 1 | +1 | new_publication |
-| A genomic imprinting model of termite caste determination: not genetic but epigenetic inheritance influences offspring caste fate | 70.0 | 71 | +1 | citation_increase |
+| Genomic data provide insights into the classification of extant termites | 107.0 | 108 | +1 | citation_increase |
+| Male same-sex pairing as an adaptive strategy for future reproduction in termites | 37.0 | 38 | +1 | citation_increase |
+| Loss of pair formation predates the evolution of male-less society in termites | 1.0 | 2 | +1 | citation_increase |
